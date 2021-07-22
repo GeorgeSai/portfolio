@@ -6,7 +6,7 @@ function App() {
       <h2>This is my own personal portfolio</h2>
       <div className='actions'>
       <button className ='btn'>Home</button>
-      <button className ='btn'>Projects</button>
+      <button className ='btn'>Projec</button>
       <button className ='btn'>Contact</button>
       </div>
     </div>
