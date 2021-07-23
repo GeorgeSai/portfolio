@@ -14,11 +14,13 @@
 //   );
 // }
 import React from 'react';
-import { BrowserRouter as Router} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Navmenu from './Components/Navmenu';
 import Home from './Pages/Home';
 import Projects from './Pages/Projects';
 import Contact from './Pages/Contact';
+
+
 
 export default function App(){
   return (
@@ -37,13 +39,11 @@ export default function App(){
           <Contact />
         </Route>
         <Route path="/">
+        
         <Home />
         </Route>
         
       </Switch>
-
-      
-      
       </Router>
     </>
   );
