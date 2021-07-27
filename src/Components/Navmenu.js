@@ -11,7 +11,7 @@ top: 0;
 left: 0;
 width: 100%;
 padding: 1rem 0;
-background: #a4b4c4;
+${'' /* background: #a4b4c4; */}
 ul{
     max-width: 1200px;
     margin: 0 auto;
@@ -45,11 +45,18 @@ ul{
     cursor: pointer;
     display: none;
     outline:none;
+    *{
+        pointer-events: none;
+    }
 }
 .closeNavIcon{
     display: none;
 }
 @media only screen and (max-width: 768px){
+    padding: 0;
+    .hide-item{
+        transform: translateY(calc(-100% - var(--top)));
+    }
     .mobile-menu-icon{
         display:block;
     }
@@ -86,11 +93,17 @@ export default function Navmenu(){
     const[showNav, SetShowNav] = useState(false);
     return(
         <NavmenuStyles>
-        <div classname="mobile-menu-icon">
-         <MdMenu></MdMenu>
+        <div className="mobile-menu-icon"
+            onClick={()=>SetShowNav(!showNav)}
+            role="button"
+            onKeyDown={()=>SetShowNav(!showNav)}
+            tabIndex={0}
+        >
+         <MdMenu />
         </div>
             <ul className={!showNav ? 'navItems hide-item': 'navItems'}>
-            <div className="closeNavIcon"
+            <div 
+            className="closeNavIcon"
             onClick={()=>SetShowNav(!showNav)}
             role="button"
             onKeyDown={()=>SetShowNav(!showNav)}
@@ -98,13 +111,29 @@ export default function Navmenu(){
                 <MdClose />
             </div>
                 <li>
-                <NavLink to="/" exact>Home</NavLink>
+                <NavLink to="/" exact
+                onClick={()=>SetShowNav(!showNav)}
+            role="button"
+            onKeyDown={()=>SetShowNav(!showNav)}
+            tabIndex={0}
+
+                >Home</NavLink>
                 </li>
                 <li>
-                <NavLink to="/Projects">Projects</NavLink>
+                <NavLink to="/Projects"
+                onClick={()=>SetShowNav(!showNav)}
+            role="button"
+            onKeyDown={()=>SetShowNav(!showNav)}
+            tabIndex={0}
+                >Projects</NavLink>
                 </li>
                 <li>
-                <NavLink to="/contact">Contact</NavLink>
+                <NavLink to="/contact"
+                onClick={()=>SetShowNav(!showNav)}
+            role="button"
+            onKeyDown={()=>SetShowNav(!showNav)}
+            tabIndex={0}
+                >Contact</NavLink>
                 </li>
             </ul>
         </NavmenuStyles>
