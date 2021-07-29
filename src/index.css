@@ -1,3 +1,30 @@
 actions {
     position: center;
 }
+
+.social container {
+    background-color: #eee;
+    padding: 25px 50px;
+}
+a.social {
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+  }
+  a.social:hover {
+    transform: translateY(-5px);
+  }
+
+  a.youtube {
+    color: #eb3223;
+  }
+  
+  a.facebook {
+    color: #4968ad;
+  }
+  a.github{
+      color:black
+  }
+  a.discord{
+      color:cornflowerblue
+  }
