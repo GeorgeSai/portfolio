@@ -1,6 +1,6 @@
 import React from 'react'
-import HeroImg from '../Images/comp2.png';
-import Ptext from './Ptext';
+import HeroImg from '../Images/coding.jpg';
+// import Ptext from './Ptext';
 import Button from './Button'
 
 export default function HeroSection() {
@@ -15,9 +15,9 @@ export default function HeroSection() {
                     <img src={HeroImg} alt="There"/>
                 </div>
                 <div className="heroinfo">
-                    <Ptext>I am a Web Developer. I am currently working as a full stack developer</Ptext>
+                    <h2>I am a Web Developer. I am currently working as a full stack developer</h2></div>
 
-
+                    <div className="infoon">
                     <h3>About:</h3>
                     <p>I am a computer science gradaute. Based in Lebanon. I like listening to music while working on my personal porjects. In my free time I like to swim and have long walks with my dog in nature, in other to forget about one's and zero's a bit.</p>
                     
@@ -30,7 +30,7 @@ export default function HeroSection() {
 
 
                     <Button btnLink="/projects" btnText="See my projects" />
-                </div>
+                    </div>
             </div>
         </div>
     );

@@ -2,14 +2,19 @@ actions {
     position: center;
 }
 
-.social container {
-    background-color: #eee;
+.social-container {
+    background-color:#eee;
     padding: 25px 50px;
+    
+    
 }
 a.social {
     margin: 0 1rem;
     transition: transform 250ms;
     display: inline-block;
+   
+    
+    
   }
   a.social:hover {
     transform: translateY(-5px);
@@ -27,4 +32,36 @@ a.social {
   }
   a.discord{
       color:cornflowerblue
+  }
+
+  .heroheding{
+
+    
+    padding-top: 150px;
+  }
+  .house{
+    border: solid 5px black;
+  }
+  .heroheading{
+    border: solid 2px black;
+    border-radius: 0.5rem;
+  }
+
+  .heroimg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .heroinfo{
+    border:solid 2px black;
+    border-radius: 1rem;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .containe{
+    border: solid 5px black
   }

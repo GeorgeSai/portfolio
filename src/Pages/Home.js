@@ -11,7 +11,7 @@ h1 {
 
 export default function Home() {
     return (
-        <div>
+        <div className="house">
             <MainStyles>
                 <h1>Welcome to the Homepage</h1>
             </MainStyles>
