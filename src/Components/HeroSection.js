@@ -19,7 +19,7 @@ export default function HeroSection() {
 
                     <div className="infoon">
                     <h3>About:</h3>
-                    <p>I am a computer science gradaute. Based in Lebanon. I like listening to music while working on my personal porjects. In my free time I like to swim and have long walks with my dog in nature, in other to forget about one's and zero's a bit.</p>
+                    <p>I am a computer science gradaute. Based in Lebanon. I like listening to music while working on my personal porjects. In my free time I like to swim and have long walks with my dog in nature, in order to forget about one's and zero's a bit.</p>
                     
                     <h3>Services:</h3>
                     <h4 style={{color:'red'}}>Front End Development:</h4>

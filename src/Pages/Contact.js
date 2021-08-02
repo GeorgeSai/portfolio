@@ -1,6 +1,6 @@
 import React from 'react'
 // import {FaFacebook,FaYoutube} from 'react-icons/fa';
-import Ptext from '../Components/Ptext'
+// import Ptext from '../Components/Ptext'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faYoutube, faFacebook, faGithub, faDiscord} from '@fortawesome/free-brands-svg-icons';
 
@@ -8,11 +8,13 @@ export default function Contact() {
     return (
         <div className="containe">
         <h1 className = "heroheding">
-        <span>This is my </span>
-        <span> Contact page</span></h1>
+        {/* <span>This is my </span>
+        <span> Contact page</span> */}
+        
+        </h1>
         <div className="recentprojects">
-            <Ptext>You can follow my social media pages to know more about me. </Ptext>
-            <Ptext>Please don't hesitate to contact me in case you wanted any help</Ptext>
+            <h2>You can follow my social media pages to know more about me. </h2>
+            <h3>Please don't hesitate to contact me in case you wanted any help.</h3>
         </div>
         <div>
             {/* <a href="https://www.youtube.com/watch?v=mB4uHPqcU8E" 
